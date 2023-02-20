@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input[type="submit"] {
+  background: rgb(75, 119, 214);
+  border: 1px solid;
+  padding: 5px 20px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+input[type="text"] {
+  border: 1px solid lightgray;
+  padding: 10px 25px;
+}
+
+input:not(:placeholder-shown) +
+input[type="submit"] {
+  opacity: 1;
+}
+
